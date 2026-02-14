@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 47609daa7f07ee90199c6a48c676c051c00cb591
+
 import 'dart:math';
 
 void main() {
@@ -23,33 +21,32 @@ void main() {
 
   // Area of a circle
   double radius = 5;
-<<<<<<< HEAD
+
   double area = pi * radius * radius;
   print('The area of a circle is $area');
 
   // area of a square
-=======
-  double area = pi*radius*radius;
-  print('The area of a circle is $area');
+
+  double area1 = pi*radius*radius;
+  print('The area of a circle is $area1');
 
 // area of a square
->>>>>>> 47609daa7f07ee90199c6a48c676c051c00cb591
   double side = 4;
 
   double areaofsq = side * side;
 
   print("Area of Square: $areaofsq");
 
-<<<<<<< HEAD
+
   // area of a rectangle
-=======
+
 // area of a rectangle
->>>>>>> 47609daa7f07ee90199c6a48c676c051c00cb591
+
   double length = 5;
   double width = 4;
   double areaofrec = length * width;
   print("Area of Rectangle: $areaofrec");
-<<<<<<< HEAD
+
   // even and odd number check
   int number = 5;
   if (number % 2 == 0) {
@@ -119,8 +116,7 @@ void display(){
 String displays(){
    return 'Ayan';
 }
-=======
 
 
-}
->>>>>>> 47609daa7f07ee90199c6a48c676c051c00cb591
+
+

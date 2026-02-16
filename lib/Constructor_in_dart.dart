@@ -45,3 +45,67 @@ void display() {
 }
 
 }
+//Optional named constructor with public properties
+
+class People {
+  String? name;
+  int? age;
+
+  People({this.name, this.age});
+}
+
+//Optional named constructor with public properties
+class PrivatePeople {
+  String? _name;
+  int? _age;
+
+  String? get name => _name;
+
+  int? get age => _age;
+
+  PrivatePeople({String? name, int? age}) {
+    _name = name ?? '';
+    _age = age ?? 99;
+  }
+}
+
+// named constructor with private properties
+class PrivatePeople1 {
+  final String _name;
+  final int _age;
+
+  PrivatePeople1({required String name, required int age})
+      : _name = name,
+        _age = age;
+
+  String get name => _name;
+
+  int get age => _age;
+}
+
+//named constructor with public properties
+class PublicPeople1 {
+  String name;
+  int age;
+
+  PublicPeople1({required this.name, required this.age});
+}
+
+class PublicPeople2 {
+  String name;
+
+  int age;
+
+  PublicPeople2(this.name, this.age);
+}
+
+class PrivatePeople2 {
+  final String _name;
+  final int _age;
+
+  PrivatePeople2(this._name, this._age);
+
+  String get name => _name;
+
+  int get age => _age;
+}

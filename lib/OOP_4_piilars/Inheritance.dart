@@ -25,6 +25,11 @@ void main(){
   rectangle.diameter2 = 20;
   print(rectangle.area());
 
+  final triangle = Triangle();
+  triangle.diameter1 = 10;
+  triangle.diameter2 = 20;
+  print(triangle.area());
+
 
 }
 // Single inheritance in dart

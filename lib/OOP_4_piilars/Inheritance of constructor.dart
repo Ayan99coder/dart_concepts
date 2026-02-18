@@ -53,11 +53,12 @@ class Person1 {
     print('age : $age');
   }
 }
+
 class Student1 extends Person1 {
   int? rollNumber;
 
   Student1({String? name, int? age, this.rollNumber})
-      : super(name: name, age: age) {
+    : super(name: name, age: age) {
     print('i am a student1');
     print('name : $name');
     print('age : $age');
@@ -65,3 +66,18 @@ class Student1 extends Person1 {
 }
 //Calling Named Constructor Of Parent Class In Dart
 
+class Laptop3 {
+  Laptop3() {
+    print("Laptop constructor");
+  }
+
+  Laptop3.named() {
+    print("Laptop named constructor");
+  }
+}
+
+class MacBook3 extends Laptop3 {
+  MacBook3() : super.named() {
+    print("MacBook constructor");
+  }
+}

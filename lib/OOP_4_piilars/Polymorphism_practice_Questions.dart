@@ -35,6 +35,64 @@ void show(Animal animal) {
   animal.type();
 }
 
+class Vehical {
+  void showName(String name, String type) {
+    print('My vehical name is $name and type is $type');
+  }
+}
+
+class Car extends Vehical {
+  @override
+  void showName(String name, String type) {
+    print('My vehical name is $name and type is $type');
+  }
+}
+
+class Bike extends Vehical {
+  @override
+  void showName(String name, String type) {
+    print('My  name is $name and type is $type');
+  }
+}
+
+void Show(Vehical Vehicaltype) {
+  Vehicaltype.showName('sonata', 'car');
+}
+
+// with abstract class
+abstract class Vehical1 {
+  void showName(String name, String type);
+
+  void color();
+}
+
+class Car1 extends Vehical1 {
+  @override
+  void showName(String name, String type) {
+    print('My vehical name is $name and type is $type');
+  }
+
+  void color() {
+    print('color is black');
+  }
+}
+
+class Bike1 extends Vehical1 {
+  @override
+  void showName(String name, String type) {
+    print('My vehical name is $name and type is $type');
+  }
+
+  @override
+  void color() {
+    print('color is red');
+  }
+}
+
+void show1(Vehical1 vehical1) {
+  vehical1.color();
+}
+
 void main() {
   show(Dog());
   show(Bird());
@@ -42,4 +100,17 @@ void main() {
   Animal b = Bird();
   b.showName('Faizan');
   a.showName('Umair');
+  print('- - - - - - -');
+  // another
+  Vehical vehical = Car();
+  vehical.showName('corolla', 'car');
+  Show(Car());
+  Show(Bike());
+  print('- - - - - - -');
+  Vehical1 veh = Car1();
+  veh.showName('corolla', 'car');
+  show1(Car1());
+  Vehical1 veh1 = Bike1();
+  veh1.showName('honda', 'bike');
+  show1(Bike1());
 }

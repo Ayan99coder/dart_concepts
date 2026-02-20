@@ -48,6 +48,7 @@ abstract class Area {
 }
 
 abstract class Parameter {
+  void area();
   void parameter();
 }
 
